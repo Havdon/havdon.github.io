@@ -1,2 +1,58 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+$dark: #424242;
+$dark-light: #8F8F8F;
+$body-color: #D3CEAA;
+
+
+body {
+
+	&>header {
+		text-align: center;
+		border: 1px solid $dark;
+		border-radius: 15px;
+		line-height: 120px;
+		height: 150px;
+		vertical-align: middle;
+		h1>a {
+			text-decoration: none;
+		}
+
+		h2 {
+			line-height: 1em;
+		}
+	}
+
+	&>nav {
+
+		border-top-left-radius:15px;
+		border-top-right-radius:15px;
+		padding-left: 0;
+		padding-right: 0;
+		width: 95%;
+		margin: 0 auto;
+		margin-top: -1.5em;
+
+		.main-navigation {
+			margin-left: 1em;
+		}
+
+		.subscription {
+			margin-right: 1em;
+		}
+
+	}
+
+	#main {
+		border: 1px solid $dark;
+		border-bottom: 1px solid $dark-light;
+		border-top-left-radius:15px;
+		border-top-right-radius:15px;
+		padding-left: 0;
+		padding-right: 0;
+		width: 95%;
+		margin: 0 auto;
+	}
+
+}
