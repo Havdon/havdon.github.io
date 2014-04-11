@@ -1,16 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[OJ Koli]]></title>
   <link href="http://Havdon.github.io/atom.xml" rel="self"/>
   <link href="http://Havdon.github.io/"/>
-  <updated>2014-04-11T15:11:18+03:00</updated>
+  <updated>2014-04-11T17:40:30+03:00</updated>
   <id>http://Havdon.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Oskar Koli]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hello World 2]]></title>
+    <link href="http://Havdon.github.io/2014/04/11/hello-world-2/"/>
+    <updated>2014-04-11T17:40:17+03:00</updated>
+    <id>http://Havdon.github.io/2014/04/11/hello-world-2</id>
+    <content type="html"><![CDATA[<p>This is a post.</p>
+
+<p>Sometext is this, yes.</p>
+
+<p>Fun.</p>
+
+<p>More text #1</p>
+
+<p>More text #2</p>
+
+<p>More text #3</p>
+
+<!-- more -->
+
+
+<p>More text #4</p>
+
+<p>More text #5</p>
+
+<p>More text #6</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hello World]]></title>
+    <link href="http://Havdon.github.io/2014/04/11/hello-world/"/>
+    <updated>2014-04-11T17:34:39+03:00</updated>
+    <id>http://Havdon.github.io/2014/04/11/hello-world</id>
+    <content type="html"><![CDATA[<p>This is a post.</p>
+
+<p>Sometext is this, yes.</p>
+
+<p>Fun.</p>
+
+<p>More text #1</p>
+
+<p>More text #2</p>
+
+<p>More text #3</p>
+
+<!-- more -->
+
+
+<p>More text #4</p>
+
+<p>More text #5</p>
+
+<p>More text #6</p>
+]]></content>
+  </entry>
   
 </feed>
