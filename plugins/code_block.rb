@@ -86,6 +86,7 @@ module Jekyll
       source = safe_wrap(source)
       source = context['pygments_prefix'] + source if context['pygments_prefix']
       source = source + context['pygments_suffix'] if context['pygments_suffix']
+      source = "</article>" + source + "<article class='hentry' role='article'>"
       source
     end
   end

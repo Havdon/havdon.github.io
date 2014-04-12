@@ -17,8 +17,15 @@ More text #1
 More text #2
 
 More text #3
-
 <!-- more -->
+
+``` ruby
+class Fixnum
+  def prime?
+    ('1' * self) !~ /^1?$|^(11+?)\1+$/
+  end
+end
+```
 
 More text #4
 

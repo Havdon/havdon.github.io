@@ -13,10 +13,10 @@ body {
 		border: 1px solid $dark;
 		border-radius: 15px;
 		line-height: 120px;
-		height: 150px;
-		vertical-align: middle;
 		h1>a {
 			text-decoration: none;
+			font-size: 2.5em;
+			font-family: 'IM Fell Great Primer SC', serif;
 		}
 
 		h2 {
@@ -55,4 +55,65 @@ body {
 		margin: 0 auto;
 	}
 
+	article {
+		padding: 0 !important;
+		&>header {
+			padding-left: 1em;
+			padding-right: 1em;
+			background-color: #fff;
+			margin-bottom: 0;
+			&>.meta {
+				padding-top: 1em;
+			}
+		}
+
+		&>.entry-content {
+
+				padding-top: 1.5em;
+			&>p {
+				padding-left: 1em;
+				padding-right: 1em;
+				margin-bottom: 0;
+				padding-bottom: 1.5em;
+			}	
+			background-color: #fff;
+		}
+		&>footer {
+			padding-left: 1em;
+			padding-right: 1em;
+			margin-top: 0;
+			padding-top: 2em;
+			background-color: #fff;		
+		}
+	}
+
+	.top-article {
+		padding-top: 1em;
+	}
+
+	.code-top {
+		height: 30px;
+		width: 100%;
+		background-color: #fff;
+		border-top-left-radius:15px;
+		border-top-right-radius:15px;
+	}
+
+
+	.code {
+
+	}
+
+
+	&>#main {
+		background: none !important;
+		border: 0;
+		&>#content {
+			background: none !important;
+			border: 0;
+
+		}
+	}
+
+	
 }
