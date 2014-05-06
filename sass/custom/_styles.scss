@@ -1,119 +1,82 @@
-// This File is imported last, and will override other styles in the cascade
-// Add styles here to make changes without digging in too much
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 
-$dark: #424242;
-$dark-light: #8F8F8F;
-$body-color: #D3CEAA;
 
+#content>div, #content>article {
+	width: auto;
+}
+
+#main {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	#content {
+		border-right: none;
+	}
+}
+
+html {
+	background-color: #fff;
+}
 
 body {
-
-	&>header {
-		text-align: center;
-		border: 1px solid $dark;
-		border-radius: 15px;
-		line-height: 120px;
-		h1>a {
-			text-decoration: none;
-			font-size: 2.5em;
-			font-family: 'IM Fell Great Primer SC', serif;
-		}
-
-		h2 {
-			line-height: 1em;
-		}
-	}
-
-	&>nav {
-
-		border-top-left-radius:15px;
-		border-top-right-radius:15px;
-		padding-left: 0;
-		padding-right: 0;
-		width: 95%;
-		margin: 0 auto;
-		margin-top: -1.5em;
-
-		.main-navigation {
-			margin-left: 1em;
-		}
-
-		.subscription {
-			margin-right: 1em;
-		}
-
-	}
-
-	#main {
-		border: 1px solid $dark;
-		border-bottom: 1px solid $dark-light;
-		border-top-left-radius:15px;
-		border-top-right-radius:15px;
-		padding-left: 0;
-		padding-right: 0;
-		width: 95%;
-		margin: 0 auto;
-	}
-
-	article {
-		padding: 0 !important;
-		&>header {
-			padding-left: 1em;
-			padding-right: 1em;
-			background-color: #fff;
-			margin-bottom: 0;
-			&>.meta {
-				padding-top: 1em;
+	& > header {
+		padding: 0;
+		height: $header-height;
+		& > hgroup {
+			text-align: center;
+			height: $title-text-size;
+			line-height: $title-text-size;
+			& > #title {
+				color: $title-color;
+				text-decoration: none;
+				font-size: $title-text-size * 0.8;
+				text-transform:uppercase;
+				//text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 			}
 		}
-
-		&>.entry-content {
-
-				padding-top: 1.5em;
-			&>p {
-				padding-left: 1em;
-				padding-right: 1em;
-				margin-bottom: 0;
-				padding-bottom: 1.5em;
-			}	
-			background-color: #fff;
-		}
-		&>footer {
-			padding-left: 1em;
-			padding-right: 1em;
-			margin-top: 0;
-			padding-top: 2em;
-			background-color: #fff;		
-		}
-	}
-
-	.top-article {
-		padding-top: 1em;
-	}
-
-	.code-top {
-		height: 30px;
-		width: 100%;
-		background-color: #fff;
-		border-top-left-radius:15px;
-		border-top-right-radius:15px;
+		border-bottom: 1px solid $header-line-color;
+	} 
+	& > nav {
+		background: none;
+		border: none;
 	}
 
 
-	.code {
+}
 
-	}
-
-
-	&>#main {
-		background: none !important;
-		border: 0;
-		&>#content {
-			background: none !important;
-			border: 0;
-
-		}
-	}
-
+#logoLink {
+	display:block;
+	width: $logo-circle-radius * 0.9;
+	height: $logo-circle-radius * 0.9;
+	border-radius: 50%;
+	text-decoration: none;
+	font-size: 1.5em;
+	background-color: $header-bg;
+	color: $title-color;
+	line-height:$logo-circle-radius;
+	text-align:center;
+	background: $header-bg;
+	border: $logo-circle-radius * 0.1 solid #fff;
+	//box-shadow: 1px 0 0 $header-line-color, -1px 0 0 $header-line-color, 0 1px 0 $header-line-color, 0 -1px 0 $header-line-color, 1px 1px $header-line-color, -1px -1px 0 $header-line-color, 1px -1px 0 $header-line-color, -1px 1px 0 $header-line-color;
 	
+	margin: 0 auto;
+
+	position: relative;
+	top: $logo-circle-radius * 0.15;
+	$anim-time: 0.5s;
+	-webkit-transition: background-color $anim-time;  /* For Safari 3.1 to 6.0 */
+	transition: background-color $anim-time;
+
+	&:hover {
+		background-color: $header-bg * 1.8;
+	}
+
+	z-index: 10;
+
 }

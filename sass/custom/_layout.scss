@@ -1,7 +1,7 @@
 // Here you can easily change your sites's layout.
 // To give it a try, uncomment some of the lines below, make changes, rebuild your blog, and see how it works.
 
-$header-font-size: 1em;
+// $header-font-size: 1em;
 //$header-padding-top: 1.5em;
 //$header-padding-bottom: 1.5em;
 
@@ -20,4 +20,9 @@ $header-font-size: 1em;
 //$sidebar-pad-wide: 20px;
 //$sidebar-width-wide: 300px;
 
+
+$max-width: 100%;
+$header-height: 6em; 
+$title-text-size: $header-height * 0.6;
+$logo-circle-radius: $header-height * 0.4;
 
