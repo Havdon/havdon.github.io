@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[OJ Koli]]></title>
+  <title><![CDATA[Oskar Koli]]></title>
   <link href="http://Havdon.github.io/atom.xml" rel="self"/>
   <link href="http://Havdon.github.io/"/>
-  <updated>2014-04-11T17:40:30+03:00</updated>
+  <updated>2014-05-06T11:30:45+03:00</updated>
   <id>http://Havdon.github.io/</id>
   <author>
     <name><![CDATA[Oskar Koli]]></name>
@@ -31,6 +31,21 @@
 <p>More text #3</p>
 
 <!-- more -->
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Fixnum</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">prime?</span>
+</span><span class='line'>    <span class="p">(</span><span class="s1">&#39;1&#39;</span> <span class="o">*</span> <span class="nb">self</span><span class="p">)</span> <span class="o">!~</span> <span class="sr">/^1?$|^(11+?)\1+$/</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 <p>More text #4</p>
